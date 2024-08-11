@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*navigation bar*/
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: rgb(68, 67, 68);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: width 0.3s;
+}
+.nav-link:hover::after {
+    width: 70%;
+}
+/*intro*/
+.hero {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    padding: 20px; 
+}
+
+.hero-content {
+    flex: -5;
+    text-align: left;
+}
+
+.hero-content h4 {
+    margin-top: 10px;
+    color: rgb(50, 121, 110);
+}
+
+.hero-content h1 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero-content button {
+    margin-top: 20px; 
+}
+
+.btn {
+    padding: 10px 20px;
+}
+/*about me*/
+.about {
+    padding: 50px 0; 
+    background-color: #f9f9f9; 
+}
+
+.about-content {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.profile-picture img {
+    height: 400px; 
+    width: auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.content {
+    flex: 1; 
+    padding: 0 20px; 
+}
+
+.content h1 {
+    margin-bottom: 10px; 
+}
+
+.content h3 {
+    color: #333;
+}
+
+.content p {
+    font-size: 20px; 
+    line-height: 1.6; 
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-right: 10px; 
+}
+
+
